@@ -7,6 +7,7 @@ body {
     margin: 0px;
     padding: 8px;
     font-family: "Fredoka One", sans-serif;
+    font-size: 55px;
     width: 20%;
     text-shadow: 
     1px 1px 0px black,
@@ -23,7 +24,7 @@ ul {
 
 
 body > header {
-    background-color: orange;
+    background-color: rgb(113, 176, 113);
     color: white;
     display: flex;
     height: 12vh;
@@ -35,7 +36,6 @@ body > header {
     display: flex;
 
 }
-
 
 #nav-ul > li {
     padding: 8px;
@@ -61,25 +61,76 @@ body > main article {
     font-size: 1.5vw;
 }
 
+body > main {
+
+    background-color:white;
+}
+
 #main-content {
     display: flex;
     justify-content: space-around;
+    
 }
 
 #main-content > div {
     width: 70%;
+
 }
+
 
 form {
     text-align: center;
 }
 
 h2 {
+    color: #333333;
     text-align: center;
+    font-family: Georgia, Times, serif;
+    font-size: 39px;
+    margin-bottom: 15px;
 }
 
+h3 {
+    color: #333333;
+    font-size: 21px;
+    margin: 5px 0;
+}
+
+h4 {
+    color: #333333;
+    font-size: 16px;
+
+}
+
+p {
+    color: #333333;
+    font-size: 18px;
+}
+
+/* Flexbox layout for recipe info and image */
+.recipe-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Style for text block */
+.info-text {
+    flex: 1;
+}
+
+/* Style for the image block */
+.info-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 1px;
+}
+
+
 body > footer {
-    background-color: orange;
+    background-color: rgb(113, 176, 113);
     display: flex;
 }
 
@@ -87,11 +138,45 @@ img {
     border-radius:  50%;
 }
 
+/* General styling for the review buttons */
+.reviewbutton {
+    display: inline-block;
+    padding: 6px 6px;
+    background-color: lightpink; /* Pink color for the button */
+    color: white;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Rounded border */
+    border: 2px solid lightpink; /* Border matching the button color */
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px; /* Space between buttons */
+}
+
+
+/* Optional: Styling the list to remove default bullet points */
+#review-ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+/* Optional: Align the buttons horizontally */
+#review-ul li {
+    display: inline;
+}
+
+body > footer {
+    color: white;
+}
+
 #footer-ul {
     display: flex;
     list-style: none;
 
 }
+
 
 #footer-ul > div > li {
     margin-left: 12px;
